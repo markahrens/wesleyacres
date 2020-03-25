@@ -10,8 +10,11 @@ const Header = ({ siteTitle }) => (
       </Link>
     </h1>
     <nav>
-      <Link to="history">
-        History
+      <Link to="about">
+        About
+      </Link>
+      <Link to="products">
+        Products
       </Link>
     </nav>
   </header>
