@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant:700");
+@import url("https://fonts.googleapis.com/css?family=Mukta:300,400,500");
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+$green: #2a4c16;
+
+body{
+    font-family: Mukta, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: $green;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        font-family: Cormorant;
+        text-transform: uppercase;
+
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
