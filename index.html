@@ -1,17 +1,172 @@
 <html>
   <head>
     <title>Wesley Acres</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/wesleyacres.css" rel="stylesheet" />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body id="home">
     <header>
-      <h1>Wesley<br />Acres</h1>
-      <div class="subhead">Milan, IL</div>
+      <div class="overlay">
+        <h1>Wesley<br />Acres</h1>
+        <div class="subhead">Milan, IL</div>
+      </div>
     </header>
     <main>
+      <div class="two-column">
+        <div>
+          <h2>Farm Stand Hours</h2>
+          <p>Tuesday & Friday - 3:30-6:30</p>
+          <p class="alert">
+            Wesley Acres is a working farm and is only open to the public during
+            "Open Farm" hours.
+          </p>
+          <p>
+            For weekly updates on our available produce, please sign-up for our
+            email list.
+          </p>
+        </div>
+        <div>
+          <h2>Follow Us</h2>
+          <div>
+            <a href="https://www.instagram.com/wesleyacresil/">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </div>
+          <div>
+            <a href="http://facebook.com/wesleyacresil/">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mailing-list">
+        <div class="content">
+          <h2>Sign up for our Mailing List</h2>
+          <!-- Begin Mailchimp Signup Form -->
+
+          <div id="mc_embed_signup">
+            <form
+              action="https://farm.us19.list-manage.com/subscribe/post?u=6e4338669d656a53f1d1a6b8a&amp;id=35e780cd85"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              class="validate"
+              target="_blank"
+              novalidate
+            >
+              <div id="mc_embed_signup_scroll">
+                <div class="mc-field-groups">
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL"
+                      >Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      value=""
+                      name="EMAIL"
+                      class="required email"
+                      id="mce-EMAIL"
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-FNAME">First Name </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="FNAME"
+                      class=""
+                      id="mce-FNAME"
+                    />
+                  </div>
+                  <div class="mc-field-group">
+                    <label for="mce-LNAME">Last Name </label>
+                    <input
+                      type="text"
+                      value=""
+                      name="LNAME"
+                      class=""
+                      id="mce-LNAME"
+                    />
+                  </div>
+                </div>
+                <div id="mce-responses" class="clear">
+                  <div
+                    class="response"
+                    id="mce-error-response"
+                    style="display:none"
+                  ></div>
+                  <div
+                    class="response"
+                    id="mce-success-response"
+                    style="display:none"
+                  ></div>
+                </div>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div
+                  style="position: absolute; left: -5000px;"
+                  aria-hidden="true"
+                >
+                  <input
+                    type="text"
+                    name="b_6e4338669d656a53f1d1a6b8a_35e780cd85"
+                    tabindex="-1"
+                    value=""
+                  />
+                </div>
+                <div class="clear">
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    name="subscribe"
+                    id="mc-embedded-subscribe"
+                    class="button"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <div class="content">
-        <h2>About the Farm</h2>
+        <div>
+          <address class="vcard">
+            <span class="adr">
+              <span class="street-address">2626 Coyne Center Rd.</span>
+              <span class="locality">Milan</span>,
+              <abbr class="region" title="Illinois">IL</abbr>&nbsp;&nbsp;
+            </span>
+          </address>
+
+          <div id="map" style="width: 100%; height: 300px;"></div>
+        </div>
+      </div>
+      <div class="content">
+        <h2>What We Sell</h2>
+        <p>
+          Produce and cut flowers will vary through the seasons with eggs
+          available year round. Examples of produce sold are garlic, tomatoes,
+          melons, and sweet corn. Small to medium bouquets will include
+          in-season flowers.
+        </p>
+        <p>
+          For a list of current items for sale, we recommend signing up for the
+          mailing list or following us on Facebook.
+        </p>
+      </div>
+      <div class="content">
+        <h2>Our Story</h2>
         <p>
           Our family has been on this farm since 1937. This was a dairy farm,
           with rolling hills and woodlands for pasture. In the early 1960's my
@@ -24,19 +179,73 @@
           my soul and fuel the desire my wife and I have to be good stewards of
           the land here.
         </p>
-        <p>
-          These timbers were used as the frame of the dairy barn on the farm. We
-          saved them when we razed the barn several years ago. The barn was
-          built in 1906 and had wood pegs to hold the timbers together.
-        </p>
       </div>
-      <aside>
-        <div class="social">
-          <a href="https://www.facebook.com/pages/category/Farmers-Market/Wesley-Acres-Dairy-129819291072/">
-            <i class="fab fa-facebook"></i> Find us on Facebook
-            </a>
-        </div>
-      </aside>
     </main>
   </body>
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoidGhlbWFya2FocmVucyIsImEiOiJjazhkamp2bmgwYzZpM2xtazY3dHl2ZmNsIn0.m3UDh4v_xXFelj9WMRAcCA";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/outdoors-v11",
+      zoom: 16.5,
+      center: [-90.55, 41.401866]
+    });
+    map.on("load", function() {
+      /* Image: An image is loaded and added to the map. */
+      map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+        if (error) throw error;
+        map.addImage("custom-marker", image);
+        /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+        map.addLayer({
+          id: "markers",
+          type: "symbol",
+          /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+          source: {
+            type: "geojson",
+            data: {
+              type: "FeatureCollection",
+              features: [
+                {
+                  type: "Feature",
+                  properties: {},
+                  geometry: {
+                    type: "Point",
+                    coordinates: [-90.5493, 41.4016]
+                  }
+                }
+              ]
+            }
+          },
+          layout: {
+            "icon-image": "custom-marker"
+          }
+        });
+      });
+    });
+
+  </script>
+  <script
+    type="text/javascript"
+    src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+  ></script>
+  <script type="text/javascript">
+    (function($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = "EMAIL";
+      ftypes[0] = "email";
+      fnames[1] = "FNAME";
+      ftypes[1] = "text";
+      fnames[2] = "LNAME";
+      ftypes[2] = "text";
+      fnames[3] = "ADDRESS";
+      ftypes[3] = "address";
+      fnames[4] = "PHONE";
+      ftypes[4] = "phone";
+      fnames[5] = "BIRTHDAY";
+      ftypes[5] = "birthday";
+    })(jQuery);
+    var $mcj = jQuery.noConflict(true);
+  </script>
 </html>

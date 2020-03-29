@@ -5,55 +5,107 @@ body {
   margin: 0;
   font-family: Mukta, sans-serif;
   font-weight: 300;
-  background-color: #fdfefc; }
+  background-color: #fdfefc;
+}
 
 #home header {
   background-image: url(../images/homepage-bg.jpg);
   background-size: cover;
   background-position: center center;
-  height: 80%;
+  height: 60%;
   color: #fdfefc;
-  text-align: center; }
-  #home header h1 {
-    font-size: 5rem;
-    line-height: 4rem;
-    font-family: Cormorant, serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom: 3px solid #fdfefc;
-    max-width: 70%;
-    margin: 0px auto 10px;
-    padding-bottom: 16px;
-    letter-spacing: -2px;
-    padding-top: 100px; }
-  #home header .subhead {
-    font-size: 2rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px; }
-#home main {
+  text-align: center;
+  position: relative;
+}
+#home header .overlay {
+  background-color: #00000055;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#home header h1 {
+  font-size: 5rem;
+  line-height: 4rem;
+  font-family: Cormorant, serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 3px solid #fdfefc;
+  max-width: 70%;
+  margin: 0px auto 10px;
+  padding-bottom: 16px;
+  letter-spacing: -2px;
+  padding-top: 100px;
+}
+#home header .subhead {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#home main h1, #home main h2, #home main h3, #home main h4, #home main h5, #home main h6 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 0;
+}
+#home main p {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+#home main a {
+  color: #2a4c16;
+  text-decoration: none;
+}
+#home main a:hover {
+  color: #569b2d;
+}
+#home main address {
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: normal;
+}
+#home main .two-column {
   display: grid;
-  grid-template-columns: auto 260px;
+  grid-template-columns: 470px 470px;
   grid-column-gap: 40px;
   max-width: 980px;
   padding: 20px;
-  margin: 40px auto; }
-  @media (max-width: 800px) {
-    #home main {
-      grid-template-columns: none; } }
-  #home main .content h1, #home main .content h2, #home main .content h3, #home main .content h4, #home main .content h5, #home main .content h6 {
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px; }
-  #home main .content p {
-    font-size: 1.2rem;
-    line-height: 1.6rem; }
-  #home main aside .social {
-    font-size: 1.4rem; }
-    #home main aside .social a {
-      color: #2a4c16;
-      text-decoration: none; }
-      #home main aside .social a:hover {
-        color: #8b9DC3; }
+  margin: 0px auto;
+}
+@media (max-width: 800px) {
+  #home main .two-column {
+    grid-template-columns: none;
+  }
+}
+#home main .mailing-list {
+  background-color: #2a4c16;
+  color: #fdfefc;
+}
+#home main .mailing-list h2 {
+  text-align: center;
+}
+#home main .mailing-list input[type=submit] {
+  margin: 10px auto;
+  display: block;
+}
+#home main .mailing-list .mc-field-groups {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-column-gap: 40px;
+  max-width: 980px;
+}
+@media (max-width: 800px) {
+  #home main .mailing-list .mc-field-groups {
+    grid-template-columns: none;
+  }
+}
+#home main .content {
+  max-width: 980px;
+  padding: 20px;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=wesleyacres.css.map */

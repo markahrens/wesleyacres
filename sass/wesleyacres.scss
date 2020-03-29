@@ -3,13 +3,14 @@
 @import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 $primary : #2a4c16;
-$primary-light: lighten($primary, 80%);
+$primary-light: lighten($primary, 20%);
+$primary-white: lighten($primary, 80%);
 
 body{
     margin: 0;
     font-family: Mukta, sans-serif;
     font-weight: 300;
-    background-color: $primary-light;
+    background-color: $primary-white;
 }
 
 #home{
@@ -17,17 +18,25 @@ body{
         background-image: url(../images/homepage-bg.jpg);
         background-size:cover;
         background-position: center center;
-        height: 80%;
-        color: $primary-light;
+        height: 60%;
+        color: $primary-white;
         text-align: center;
-
+        position: relative;
+        .overlay{
+            background-color: #00000055;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
         h1{
             font-size: 5rem;
             line-height: 4rem;
             font-family: Cormorant, serif;
             font-weight: 700;
             text-transform: uppercase;
-            border-bottom: 3px solid $primary-light;
+            border-bottom: 3px solid $primary-white;
             max-width: 70%;
             margin: 0px auto 10px;
             padding-bottom: 16px;
@@ -43,37 +52,64 @@ body{
 
     }
     main{
-        display: grid;
-        grid-template-columns: auto 260px;
-        grid-column-gap: 40px;
-        max-width: 980px;
-        padding: 20px;
-        margin: 40px auto;
-        @media (max-width: 800px) {
-            grid-template-columns: none;
+        h1, h2, h3, h4, h5, h6{
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin: 0;
+            padding: 0
         }
-        .content{
-            h1, h2, h3, h4, h5, h6{
-                text-transform: uppercase;
-                font-weight: 500;
-                letter-spacing: 2px;
-            }
-            p{
-                font-size: 1.2rem;
-                line-height: 1.6rem;
+        p{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        a{
+            color: $primary;
+            text-decoration: none;
+            &:hover{
+                color: $primary-light;
             }
         }
-        aside{
-            .social{
-                font-size: 1.4rem;
-                a{
-                    color: $primary;
-                    text-decoration: none;
-                    &:hover{
-                        color: #8b9DC3;
-                    }
+        address{
+            font-size: 1.4rem;
+            text-align: center;
+            font-style: normal;
+        }
+        .two-column{
+            display: grid;
+            grid-template-columns: 470px 470px;
+            grid-column-gap: 40px;
+            max-width: 980px;
+            padding: 20px;
+            margin: 0px auto;
+            @media (max-width: 800px) {
+                grid-template-columns: none;
+            }
+        }
+        .mailing-list{
+            background-color: $primary;
+            color: $primary-white;
+            h2{
+                text-align: center;
+            }
+            input[type="submit"]{
+                margin: 10px auto;
+                display: block;
+            }
+            .mc-field-groups{
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-column-gap: 40px;
+                max-width: 980px;
+                @media (max-width: 800px) {
+                    grid-template-columns: none;
                 }
             }
+        }
+        .content{
+            max-width: 980px;
+            padding: 20px;
+            margin: 0 auto;
         }
     }
 }
