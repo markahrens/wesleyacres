@@ -9,14 +9,6 @@ const Header = ({ siteTitle }) => (
         {siteTitle}
       </Link>
     </h1>
-    <nav>
-      <Link to="about">
-        About
-      </Link>
-      <Link to="products">
-        Products
-      </Link>
-    </nav>
   </header>
 )
 
