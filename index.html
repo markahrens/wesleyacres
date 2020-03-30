@@ -25,15 +25,17 @@
       <div class="two-column">
         <div>
           <h2>Farm Stand Hours</h2>
-          <p>Tuesday & Friday - 3:30-6:30</p>
-          <p class="alert">
-            Wesley Acres is a working farm and is only open to the public during
-            "Open Farm" hours.
-          </p>
+          <p>Tuesday & Friday - 3:30-6:30<br />Saturday Open Farm hours as announced</p>
+         
           <p>
             For weekly updates on our available produce, please sign-up for our
             email list.
           </p>
+          <p>
+            <small>Wesley Acres is a working farm and is only open to the public during
+            Open Farm hours.</small>
+          </p>
+
         </div>
         <div>
           <h2>Follow Us</h2>
@@ -187,8 +189,8 @@
       "pk.eyJ1IjoidGhlbWFya2FocmVucyIsImEiOiJjazhkamp2bmgwYzZpM2xtazY3dHl2ZmNsIn0.m3UDh4v_xXFelj9WMRAcCA";
     var map = new mapboxgl.Map({
       container: "map",
-      style: "mapbox://styles/mapbox/outdoors-v11",
-      zoom: 16.5,
+      style: "mapbox://styles/mapbox/streets-v11",
+      zoom: 14.5,
       center: [-90.55, 41.401866]
     });
     map.on("load", function() {
