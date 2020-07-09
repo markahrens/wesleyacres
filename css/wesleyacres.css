@@ -104,6 +104,7 @@ body {
   text-transform: uppercase;
   transition: 0.3s;
   cursor: pointer;
+  height: auto;
 }
 #home main .mailing-list input[type=submit]:hover {
   background-color: #569b2d;
@@ -128,6 +129,9 @@ body {
   #home main .mailing-list .mc-field-groups .mc-field-group {
     text-align: left;
   }
+}
+#home main .mailing-list .mc-field-groups .mc-field-group #mc_embed_signup .asterisk {
+  font-size: inherit !important;
 }
 #home main .content {
   max-width: 980px;
