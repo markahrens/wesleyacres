@@ -130,7 +130,7 @@ body {
     text-align: left;
   }
 }
-#home main .mailing-list .mc-field-groups .mc-field-group #mc_embed_signup .asterisk {
+#home main .mailing-list .mc-field-groups .mc-field-group .asterisk {
   font-size: inherit !important;
 }
 #home main .content {
