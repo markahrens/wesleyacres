@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Wesley Acres</title>
+    <title>Wesley Acres Farm</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="css/wesleyacres.css" rel="stylesheet" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js"></script>
@@ -12,6 +12,15 @@
       href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
       rel="stylesheet"
       type="text/css"
+    />
+    <meta property="og:title" content="Wesley Acres Farm" />
+    <meta
+      property="og:description"
+      content="A working farm based in Milan, IL"
+    />
+    <meta
+      property="og:image"
+      content="https://wesleyacres.farm/images/homepage-bg.jpg"
     />
   </head>
   <body id="home">
@@ -26,16 +35,17 @@
         <div>
           <h2>Farm Stand Hours</h2>
           <p>Tuesdays and Fridays 3:30 - 6:30</p>
-         
+
           <p>
             For weekly updates on our available produce, please sign-up for our
             email list.
           </p>
           <p>
-            <small>Wesley Acres is a working farm and is only open to the public during
-            Open Farm hours.</small>
+            <small
+              >Wesley Acres is a working farm and is only open to the public
+              during Open Farm hours.</small
+            >
           </p>
-
         </div>
         <div>
           <h2>Follow Us</h2>
@@ -106,12 +116,12 @@
                   <div
                     class="response"
                     id="mce-error-response"
-                    style="display:none"
+                    style="display: none;"
                   ></div>
                   <div
                     class="response"
                     id="mce-success-response"
-                    style="display:none"
+                    style="display: none;"
                   ></div>
                 </div>
                 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
@@ -157,7 +167,9 @@
       <div class="content">
         <h2>What We Sell</h2>
         <p>
-          Produce includes cucumbers, peppers, tomatoes, summer and winter squash, pumpkins, and more.  Small to medium bouquets will include in-season flowers.
+          Produce includes cucumbers, peppers, tomatoes, summer and winter
+          squash, pumpkins, and more. Small to medium bouquets will include
+          in-season flowers.
         </p>
         <p>
           For a list of current items for sale, we recommend signing up for the
@@ -167,7 +179,17 @@
       <div class="content">
         <h2>Our Story</h2>
         <p>
-          Our family has been on this farm since 1937. This was a dairy farm, with rolling hills and woodlands for pasture. In the early 1960′s, Jim’s father was injured and sold the dairy cows. They continued with beef cows and sheep until 1983 when all livestock was sold off the farm. The farm is named after Jim’s father, Wesley Johansen, to honor him and Jim’s mother for instilling in him the rural values anchored deep in his soul which fuel the desire for our family to be good stewards of the land here. Our boys are the 5th generation farming this land. While we are always learning new methods to improve our practices, we continue to draw on tried and true farming methods from years ago.
+          Our family has been on this farm since 1937. This was a dairy farm,
+          with rolling hills and woodlands for pasture. In the early 1960′s,
+          Jim’s father was injured and sold the dairy cows. They continued with
+          beef cows and sheep until 1983 when all livestock was sold off the
+          farm. The farm is named after Jim’s father, Wesley Johansen, to honor
+          him and Jim’s mother for instilling in him the rural values anchored
+          deep in his soul which fuel the desire for our family to be good
+          stewards of the land here. Our boys are the 5th generation farming
+          this land. While we are always learning new methods to improve our
+          practices, we continue to draw on tried and true farming methods from
+          years ago.
         </p>
       </div>
     </main>
@@ -179,11 +201,11 @@
       container: "map",
       style: "mapbox://styles/mapbox/streets-v11",
       zoom: 14.5,
-      center: [-90.55, 41.401866]
+      center: [-90.55, 41.401866],
     });
-    map.on("load", function() {
+    map.on("load", function () {
       /* Image: An image is loaded and added to the map. */
-      map.loadImage("https://i.imgur.com/MK4NUzI.png", function(error, image) {
+      map.loadImage("https://i.imgur.com/MK4NUzI.png", function (error, image) {
         if (error) throw error;
         map.addImage("custom-marker", image);
         /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
@@ -201,26 +223,25 @@
                   properties: {},
                   geometry: {
                     type: "Point",
-                    coordinates: [-90.5493, 41.4016]
-                  }
-                }
-              ]
-            }
+                    coordinates: [-90.5493, 41.4016],
+                  },
+                },
+              ],
+            },
           },
           layout: {
-            "icon-image": "custom-marker"
-          }
+            "icon-image": "custom-marker",
+          },
         });
       });
     });
-
   </script>
   <script
     type="text/javascript"
     src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
   ></script>
   <script type="text/javascript">
-    (function($) {
+    (function ($) {
       window.fnames = new Array();
       window.ftypes = new Array();
       fnames[0] = "EMAIL";
